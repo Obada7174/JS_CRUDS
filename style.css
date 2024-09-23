@@ -1,0 +1,116 @@
+:root{
+    --gray:#282828;
+    --black:#151515;
+    --navy-blue:#190949;
+    --red:#5f0e0e;
+    --green:#04461f;
+    --purple:#422677;
+
+    --primary-radius:8px;
+    --btn-radius:20px;
+
+    --primary-margin:10px;
+    --btn-margin:5px;
+
+    --transition-time:.2s ;
+}
+*{
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: #dfdfdf;
+    padding: 0;
+    margin: 0;
+    text-transform: capitalize;
+}
+body{
+    background-color: var(--gray);
+}
+.container{
+    margin: auto;
+    padding: 20px;
+    width: 80%;
+    
+}
+button{
+    background-color: var(--navy-blue);
+    border-radius: var(--btn-radius);
+    width: 100%;
+    border: none;
+    height: 25px;
+    margin: var(--btn-margin) 0;
+    transition: var(--transition-time);
+    cursor: pointer;
+}
+button:hover{
+    background-color: var(--purple);
+    scale: 1.02 1.06;
+    letter-spacing:.8px ;
+}
+input{
+    background-color:var(--black);
+    border-radius: var(--primary-radius);
+    width: 100%;
+    margin: var(--primary-margin) 0 ;
+    height: 30px;
+    padding: 6px;
+    outline: none;
+    border: none;
+    transition: var(--transition-time);
+}
+input:focus{
+    scale: 1.02;
+    background-color: black;
+    transition: var(--transition-time);
+}
+.cruds-title{
+    text-align: center;
+    margin: 10px;
+    line-height: 32px;
+}
+.cruds-title h1{
+    font-size: 40px;
+    text-transform: uppercase;
+    margin: var(--primary-margin);
+}
+.cruds-title p{
+    margin: var(--primary-margin);
+}
+.financial-info input{
+    width: 18%;
+    margin: 0 2px ;
+}
+#total{
+    padding: 5px;
+    border-radius: var(--primary-radius);
+    background-color: #5f0e0e;
+    margin:0 2px ;
+}
+#total::before{
+    content: 'Total: ';
+}
+.financial-info{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: var(--primary-margin) 0;
+}
+.search {
+    display: flex;
+    justify-content: space-between;
+}
+.search button{
+    width: 49%;
+    margin: 5px 0;
+}
+.products-info{
+    width: 100%;
+    margin: var(--primary-margin) 0;
+    border-spacing: var(--primary-margin);
+    text-align: center;
+}
+th{
+    text-transform: uppercase;
+}
+td{
+    text-transform: none;
+}
